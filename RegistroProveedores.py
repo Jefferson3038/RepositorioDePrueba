@@ -46,7 +46,7 @@ class Ui_MainWindow(object):
         WHERE Prov_Codigo = '{}' '''.format(direccion,nombre,tipo,telefono,RnC,codigo)
         self.ejecuccionExitosa(sql,cur)
         a = cur.rowcount
-        cur.commit()    
+        cur.commit()    g
         cur.close()
         return a  
 
